@@ -1,0 +1,51 @@
+pipeline {
+    agent { 
+        docker { 
+            args '-u root'
+            image 'centos:7'
+            label 'docker2'
+        }
+    }
+    triggers { upstream(upstreamProjects: 'pipeline1', threshold: hudson.model.Result.SUCCESS) }
+    stages{
+        stage ('Preparation Environment') {
+            steps {
+            echo "Installing required dependencies inside the container"
+            sh 'yum -y install python3 python3-pip zlib-devel gcc git'
+            }
+        }
+        stage ('Copy Artifacts from upstream project Pipeline1') {
+            steps {
+                copyArtifacts filter: '*.jpg', fingerprintArtifacts: true, flatten: true, projectName: 'pipeline1'
+            }
+        }
+        stage ('Fetch/Clone the Repo') {
+            steps {
+                echo "Cloning the Repository"
+                sh 'git clone https://github.com/linuxacademy/content-pipelines-cje-labs.git'
+            }
+        }
+        stage ('Installing Modules Dependency') {
+            steps {
+                sh 'pip3 install -r content-pipelines-cje-labs/lab3_lab4/image_watermarker/requirements.txt'
+            }
+        }
+        stage ('Execute the Code') {
+            steps {
+                sh 'python3 content-pipelines-cje-labs/lab3_lab4/image_watermarker/watermark.py'
+            }
+        }
+    }
+    post {
+        always {
+            echo "The Build has been completed"
+        }
+        success {
+            archiveArtifacts artifacts: '*watermarked.jpg'
+        }
+        cleanup {
+            echo "Cleaning up the Workspace"
+            sh 'rm -rf content-pipelines-cje-labs *.jpg'
+        }
+    }
+}
