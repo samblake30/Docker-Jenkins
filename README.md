@@ -10,6 +10,11 @@ _Your Jenkins master is under too much load, as all jobs were being run on it. S
   <img width="450" height="250" src="https://github.com/samblake30/Docker-Jenkins/blob/master/images/learnObjective.png">
 </p>
 
+### _Pre-requisite :-_
+_Below is the plugin required_
+
+✅  ***_![CopyArtifacts](https://github.com/samblake30/Docker-Jenkins/tree/master/plugins)_***
+
 ### _Contents for Jenkinsfile are mentioned in below parted pipeline_
 
 No.          |   Pipelines
