@@ -12,7 +12,7 @@ _Your Jenkins master is under too much load, as all jobs were being run on it. S
 
 ### _Pre-requisite :-_
 _Below is the plugin required_
-
+✅  ***_Docker must be installed_***
 ✅  ***_![CopyArtifacts](https://github.com/samblake30/Docker-Jenkins/tree/master/plugins)_***
 
 ### _Contents for Jenkinsfile are mentioned in below parted pipeline_
