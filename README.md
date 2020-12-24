@@ -10,9 +10,9 @@ _Your Jenkins master is under too much load, as all jobs were being run on it. S
   <img width="450" height="250" src="https://github.com/samblake30/Docker-Jenkins/blob/master/images/learnObjective.png">
 </p>
 
-### Contents for Jenkinsfile are mentioned in below parted pipeline
+### _Contents for Jenkinsfile are mentioned in below parted pipeline_
 
 No.          |   Pipelines
 ------------ | -------------
-1           | ***![Pipeline1](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline1)***
-2           | ***![Pipeline2](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline2)***
+1           |***![Pipeline1](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline1)***
+2           |***![Pipeline2](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline2)***
