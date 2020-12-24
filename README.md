@@ -16,3 +16,5 @@ No.          |   Pipelines
 ------------ | -------------
 1           |***![Pipeline1](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline1)***
 2           |***![Pipeline2](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline2)***
+
+***Note:-***_Here the Jenkins Version used is Jenkins 2.272 and CopyArtifacts Version can create problem for permission so I downgraded/installed 1.43 to resolve issue.
