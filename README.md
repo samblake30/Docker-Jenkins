@@ -15,7 +15,7 @@ _Below is the plugin required_
 
 ✅  ***_Docker must be installed_***
 
-✅  ***_![CopyArtifacts](https://github.com/samblake30/Docker-Jenkins/tree/master/plugins)_***
+✅  ***_![CopyArtifacts Plugin](https://github.com/samblake30/Docker-Jenkins/tree/master/plugins)_***
 
 ### _Contents for Jenkinsfile are mentioned in below parted pipeline_
 
