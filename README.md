@@ -11,7 +11,7 @@ _Your Jenkins master is under too much load, as all jobs were being run on it. S
 </p>
 
 ### _Pre-requisite :-_
-_Below is the plugin required_
+_Below is the plugin and config required before getting started_
 
 ✅  ***_Docker must be installed_***
 
