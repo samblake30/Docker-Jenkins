@@ -14,5 +14,5 @@ _Your Jenkins master is under too much load, as all jobs were being run on it. S
 
 No.          |   Pipelines
 ------------ | -------------
-1           | ![Pipeline1]()
-2           | ![Pipeline2]()
+1           | ***![Pipeline1](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline1)***
+2           | ***![Pipeline2](https://github.com/samblake30/Docker-Jenkins/tree/master/pipeline2)***
